@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_tracker">
+
+    <fragment
+        android:id="@+id/navigation_tracker"
+        android:name="com.cometchat.pro.androiduikit.ui.gpstracker.GpsTrackerFragment"
+        android:label="@string/title_tracker"
+        tools:layout="@layout/fragment_gpstracker" />
+
+    <fragment
+        android:id="@+id/navigation_log"
+        android:name="com.cometchat.pro.androiduikit.ui.runninglog.RunningLogFragment"
+        android:label="@string/title_log"
+        tools:layout="@layout/fragment_runninglog" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:label="@string/title_log"
+        android:name="com.cometchat.pro.androiduikit.Views.DashboardActivity"
+        tools:layout="@layout/fragment_runninglog" />
+
+</navigation>

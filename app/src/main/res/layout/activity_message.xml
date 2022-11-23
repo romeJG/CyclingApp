@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@color/MidnightBlue"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/tvPleaseLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FEEDBACK"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="374dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/tvPleaseLogin"
+        android:layout_marginTop="45dp"
+        android:drawablePadding="24dp"
+        android:hint="Enter your subject"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White" />
+
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="354dp"
+        android:layout_height="234dp"
+        android:layout_below="@+id/subject"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="24dp"
+        android:hint="Enter your message"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnSubmitFeed"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_marginTop="31dp"
+        android:background="@color/Black"
+        android:padding="50px"
+        android:text="SUBMIT"
+        android:textColor="@color/White" />
+
+
+    <TextView
+        android:id="@+id/etMainUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

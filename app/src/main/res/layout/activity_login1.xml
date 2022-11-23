@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@color/NavyBlue"
+    tools:context=".Views.Login1">
+
+    <ImageView
+        android:id="@+id/sinovac"
+        android:layout_width="124dp"
+        android:layout_height="122dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/logo" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sinovac"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="24dp"
+        android:hint="Username"
+        android:textColor="@color/Black"
+        android:drawableLeft="@drawable/ic_users"
+        android:padding="10dp"
+        android:textColorHint="@color/Black"
+        android:textSize="25dp"
+        app:boxCornerRadiusBottomEnd="24dp"
+        app:boxCornerRadiusBottomStart="24dp"
+        app:boxCornerRadiusTopEnd="24dp"
+        app:boxCornerRadiusTopStart="24dp"
+        app:boxStrokeColor="@color/secondaryTextColor"
+        app:boxStrokeWidth="1dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/custom_input"
+        android:padding="10dp"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/Black"
+        android:textSize="25dp"
+        android:drawableLeft="@drawable/ic_lock_24dp"
+        android:drawablePadding="24dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+    />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="37dp"
+        android:background="@color/Black"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="40dp"
+        android:text="Don't have an account? Please Register"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
